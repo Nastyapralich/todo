@@ -1,64 +1,122 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    background-color: burlywood;
-}
-
-.container{
+  }
+  
+  
+  .container {
     max-width: 1170px;
-    padding: 0 15px;
+    padding: 5px 15px;
     margin: auto;
-}
-
-.wrapper{
-    width: 700px;
-    height: 600px;
-    background-color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-
-.upperText{
-    width: 100%;
-    height: 70px;
-    background-color: rgb(163, 151, 151);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .wrapper {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid black;
+  }
+  
+  .upperText {
     display: flex;
-    justify-content: space-evenly;
-    padding: 5px;
-}
-
-.taskInput{
-  width: 450px;
-  outline: none;
-  background-color: white;
-  color: black;
-  border: 0;
-  font-size: 24px;
-  padding: 10px 15px;
-}
-
-.addBtn{
-    background-color: white;
-    color: black;
-    width: 100px;
-    border-radius: 15px;
+    align-items: center;
+    padding: 10px;
+    background-color: #eee;
+  }
+  
+  .taskInput {
+    outline: none;
+    background-color: #fff;
+    color: #333;
     border: none;
-}
-
-.addBtn:hover{
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .addBtn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
     cursor: pointer;
-    background-color: beige;
+  }
+  
+  .addBtn:hover {
+    background-color: #45a049;
+  }
+  
+  .taskQueue {
+    padding: 10px;
+  }
+  
+  .taskQueueItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    position: relative;
+  }
+  
+  .checkTask::after {
+    content: "";
+    width: 10px;
+    height: 5px;
+    border: 2px solid #4caf50;
+    border-top: none;
+    border-right: none;
+    transform: rotate(300deg);
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -8px;
+    cursor: pointer;
+  }
+  
+.checked{
+    background-color: gainsboro;
 }
-
-.tastQueue{
-width: 90%;
-height: 100%;
-padding: 10px 15px;
-margin: auto;
-background-color: beige;
-}
+  
+  .delTask {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sortBtn {
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .sortBtn:hover {
+    background-color: #1976d2;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #eee;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
