@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: burlywood;
+}
+
+.container{
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.wrapper{
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.upperText{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(163, 151, 151);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.taskInput{
+  width: 450px;
+  outline: none;
+  background-color: white;
+  color: black;
+  border: 0;
+  font-size: 24px;
+  padding: 10px 15px;
+}
+
+.addBtn{
+    background-color: white;
+    color: black;
+    width: 100px;
+    border-radius: 15px;
+    border: none;
+}
+
+.addBtn:hover{
+    cursor: pointer;
+    background-color: beige;
+}
+
+.tastQueue{
+width: 90%;
+height: 100%;
+padding: 10px 15px;
+margin: auto;
+background-color: beige;
+}
